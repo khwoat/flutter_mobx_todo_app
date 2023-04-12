@@ -8,11 +8,13 @@ abstract class TodoListBase with Store {
   @observable
   ObservableList list = ObservableList<Todo>();
 
+  // Add new todo to list
   @action
   void addNewTodo(Todo todo) {
     list.add(todo);
   }
 
+  // Remove specific todo from list
   @action
   void removeTodo(Todo todo) {
     list.remove(todo);

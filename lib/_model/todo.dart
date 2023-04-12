@@ -15,4 +15,10 @@ abstract class TodoBase with Store {
   @observable
   bool done = false;
 
+  @action
+  void update(String title, String description) {
+    this.title = title;
+    this.description = description;
+  }
+
 }
